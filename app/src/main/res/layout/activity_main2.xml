@@ -7,381 +7,20 @@
     android:orientation="vertical"
     tools:context=".MainActivity2">
 
-    <LinearLayout
+
+
+
+
+
+
+    <FrameLayout
+        android:id="@+id/framlayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent"/>
 
-        <androidx.core.widget.NestedScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                >
 
 
-                <com.google.android.material.appbar.AppBarLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="?attr/actionBarSize"
-                    android:background="#3CA2AF" >
-
-                    <com.google.android.material.appbar.MaterialToolbar
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:title="Hostel-BD"
-                        app:titleTextColor="@color/black"
-                        app:navigationIcon="@drawable/baseline_arrow_forward_24"
-                        />
-
-
-
-                </com.google.android.material.appbar.AppBarLayout>
-
-
-
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_7sdp"
-                    android:layout_marginEnd="@dimen/_7sdp"
-                    android:layout_marginTop="@dimen/_7sdp"
-                    app:cardCornerRadius="@dimen/_10sdp"
-                    >
-
-
-
-                    <com.denzcoskun.imageslider.ImageSlider
-                        android:id="@+id/image_slider"
-                        android:layout_width="match_parent"
-                        android:layout_height="130dp"
-                        app:iss_auto_cycle="true"
-                        app:iss_period="1000"
-
-                        app:iss_placeholder="@drawable/ic_launcher_foreground"
-                        app:iss_error_image="@drawable/ic_launcher_background"
-                        app:iss_delay="0"/>
-
-
-                </androidx.cardview.widget.CardView>
-
-
-                <TextView
-                    android:layout_width="@dimen/_100sdp"
-                    android:layout_height="@dimen/_30sdp"
-                    android:layout_marginTop="@dimen/_9sdp"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:text="সকল ক্যাটাগরি"
-                    android:padding="@dimen/_7sdp"
-                    android:background="@drawable/bacroundbutton"
-                    android:textStyle="normal"
-                    android:gravity="center"
-                    android:textColor="@color/black"
-
-                    />
-
-
-
-                <HorizontalScrollView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    app:cardElevation="4dp"
-                    android:scrollbars="none">
-
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_marginStart="@dimen/_6sdp"
-                        >
-
-
-
-
-
-                        <LinearLayout
-                            android:layout_width="@dimen/_60sdp"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:layout_marginEnd="@dimen/_8sdp"
-                            android:background="@drawable/bacround"
-                            >
-
-
-                            <ImageView
-                                android:layout_gravity="center"
-                                android:layout_marginTop="@dimen/_8sdp"
-                                android:layout_width="@dimen/_50sdp"
-                                android:layout_height="@dimen/_30sdp"
-                                android:src="@drawable/img_8" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/_5sdp"
-                                android:backgroundTint="#1600BCD4"
-                                android:gravity="center"
-                                android:textSize="@dimen/_8sdp"
-                                android:text="ব্যাচেলার ছেলে"
-                                android:textColor="@color/black"
-                                android:textStyle="bold" />
-
-
-                        </LinearLayout>
-
-
-
-
-                        <LinearLayout
-
-                            android:layout_width="@dimen/_60sdp"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:background="@drawable/bacround"
-                            android:layout_marginEnd="@dimen/_8sdp"
-                            >
-
-
-                            <ImageView
-                                android:layout_gravity="center"
-                                android:layout_marginTop="@dimen/_8sdp"
-
-                                android:layout_width="@dimen/_50sdp"
-                                android:layout_height="@dimen/_30sdp"
-                                android:src="@drawable/sff" />
-
-                            <TextView
-                                android:layout_marginTop="@dimen/_5sdp"
-                                android:backgroundTint="#1600BCD4"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textSize="@dimen/_8ssp"
-                                android:gravity="center"
-                                android:text="ব্যাচেলার মেয়ে"
-                                android:textColor="@color/black"
-                                android:textStyle="bold" />
-
-
-
-                        </LinearLayout>
-
-
-
-
-                        <LinearLayout
-
-                            android:layout_width="@dimen/_60sdp"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:background="@drawable/bacround"
-                            android:layout_marginEnd="@dimen/_8sdp"
-                            >
-
-
-                            <ImageView
-                                android:layout_gravity="center"
-                                android:layout_marginTop="@dimen/_8sdp"
-
-
-                                android:layout_width="@dimen/_50sdp"
-                                android:layout_height="@dimen/_30sdp"
-                                android:src="@drawable/img_7" />
-
-                            <TextView
-                                android:layout_marginTop="@dimen/_5sdp"
-                                android:backgroundTint="#1600BCD4"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textSize="@dimen/_8ssp"
-                                android:gravity="center"
-                                android:text="ফ্যামিলি"
-                                android:textColor="@color/black"
-                                android:textStyle="bold" />
-
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-
-                            android:layout_width="@dimen/_60sdp"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:background="@drawable/bacround"
-                            android:layout_marginEnd="@dimen/_8sdp"
-                            >
-
-
-                            <ImageView
-                                android:layout_gravity="center"
-                                android:layout_marginTop="@dimen/_8sdp"
-
-
-                                android:layout_width="@dimen/_50sdp"
-                                android:layout_height="@dimen/_30sdp"
-                                android:src="@drawable/img_10" />
-
-                            <TextView
-                                android:layout_marginTop="@dimen/_5sdp"
-                                android:backgroundTint="#1600BCD4"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textSize="@dimen/_8ssp"
-                                android:gravity="center"
-                                android:text="চাকুরীজীবী"
-                                android:textColor="@color/black"
-                                android:textStyle="bold" />
-
-
-
-                        </LinearLayout>
-
-
-
-                        <LinearLayout
-
-                            android:layout_width="@dimen/_60sdp"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:background="@drawable/bacround"
-                            android:layout_marginEnd="@dimen/_8sdp"
-                            >
-
-
-                            <ImageView
-                                android:layout_gravity="center"
-                                android:layout_marginTop="@dimen/_8sdp"
-
-
-                                android:layout_width="@dimen/_50sdp"
-                                android:layout_height="@dimen/_30sdp"
-                                android:src="@drawable/flat" />
-
-                            <TextView
-                                android:layout_marginTop="@dimen/_5sdp"
-                                android:backgroundTint="#1600BCD4"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textSize="@dimen/_8ssp"
-                                android:gravity="center"
-                                android:text="ফ্লাট বাসা"
-                                android:textColor="@color/black"
-                                android:textStyle="bold" />
-
-
-
-                        </LinearLayout>
-
-
-                        <LinearLayout
-
-
-                            android:layout_width="@dimen/_60sdp"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/bacround"
-                            android:orientation="vertical"
-                            android:layout_marginEnd="@dimen/_8sdp"
-                            >
-
-
-                            <ImageView
-                                android:layout_width="@dimen/_50sdp"
-                                android:layout_height="@dimen/_30sdp"
-
-
-                                android:layout_gravity="center"
-                                android:layout_marginTop="@dimen/_8sdp"
-                                android:src="@drawable/ss" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/_5sdp"
-                                android:backgroundTint="#1600BCD4"
-                                android:gravity="center"
-                                android:textSize="@dimen/_8ssp"
-                                android:text="এক রুম ভাড়া"
-                                android:textColor="@color/black"
-                                android:textStyle="bold" />
-
-
-                        </LinearLayout>
-
-
-
-                    </LinearLayout>
-
-
-
-                </HorizontalScrollView>
-
-
-
-
-
-                <TextView
-                    android:layout_width="@dimen/_80sdp"
-                    android:layout_height="@dimen/_25sdp"
-                    android:layout_marginTop="@dimen/_11sdp"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:text="সকল পোস্ট"
-                    android:padding="@dimen/_7sdp"
-                    android:background="@drawable/bacroundbutton"
-                    android:textStyle="normal"
-                    android:gravity="center"
-                    android:textSize="@dimen/_8ssp"
-                    android:textColor="@color/black"
-
-                    />
-
-
-                <androidx.recyclerview.widget.RecyclerView
-
-                    android:id="@+id/recyclerView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_8sdp"
-                    android:layout_marginBottom="@dimen/_56sdp"
-                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                    tools:listitem="@layout/layout"
-
-                    />
-
-
-            </LinearLayout>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </androidx.core.widget.NestedScrollView>
-
-
-
-
-    </LinearLayout>
 
 
 
@@ -401,7 +40,10 @@
                 android:layout_height="?attr/actionBarSize"
                 app:menu="@menu/menu"
                 android:layout_alignParentBottom="true"
-                android:id="@+id/sss" />
+                android:id="@+id/bottomNavagation"
+
+
+                />
 
 
         </RelativeLayout>
@@ -409,6 +51,10 @@
 
 
     </LinearLayout>
+
+
+
+
 
 
 </RelativeLayout>

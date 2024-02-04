@@ -11,22 +11,22 @@
 
 
     <item
-        android:id="@+id/hme"
+        android:id="@+id/search"
         android:icon="@drawable/search"
-        android:title="Home"
+        android:title="Search"
         />
 
 
     <item
-        android:id="@+id/hoe"
+        android:id="@+id/favourite"
         android:icon="@drawable/love"
-        android:title="Home"
+        android:title="Favourite"
         />
 
     <item
-        android:id="@+id/he"
+        android:id="@+id/profile"
         android:icon="@drawable/contuct"
-        android:title="Home"
+        android:title="Profile"
         />
 
 

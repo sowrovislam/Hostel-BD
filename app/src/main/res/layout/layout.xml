@@ -9,183 +9,204 @@
 
 
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal">
-
-
-
-
-    <androidx.cardview.widget.CardView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_100sdp"
-        app:cardCornerRadius="@dimen/_10sdp"
-        android:layout_marginTop="@dimen/_8sdp"
-        android:layout_marginStart="@dimen/_8sdp"
-        android:layout_marginEnd="@dimen/_8ssp"
-        android:backgroundTint="@color/white"
-
-        >
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
 
-        <LinearLayout
+
+
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_height="@dimen/_100sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8ssp"
+            android:backgroundTint="@color/white"
+
             >
 
 
-            <androidx.cardview.widget.CardView
-                android:layout_marginTop="@dimen/_2sdp"
-                android:layout_width="@dimen/_140sdp"
-                android:layout_height="@dimen/_90sdp"
-                app:cardCornerRadius="@dimen/_7sdp"
-                android:layout_marginStart="@dimen/_8ssp"
-                >
-
-                <ImageView
-                    android:layout_width="@dimen/_140sdp"
-                    android:layout_height="@dimen/_90sdp"
-                    android:src="@drawable/hostelpic"
-                    android:scaleType="fitXY"
-                    />
-
-
-
-
-            </androidx.cardview.widget.CardView>
-
-
-
             <LinearLayout
-
-                android:layout_width="wrap_content"
-                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginStart="1dp"
-
+                android:orientation="horizontal"
                 >
 
-                <TextView
 
-                    android:layout_width="wrap_content"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:layout_height="wrap_content"
-                    android:textSize="@dimen/_10sdp"
-                    android:padding="2dp"
-                    android:maxLines="1"
-                    android:ellipsize="end"
-                    android:text="এপ্রিল ২০২৪ হতে ভাড়া দেওয়া হবে"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_width="@dimen/_110sdp"
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
+                    android:layout_height="@dimen/_90sdp"
+                    app:cardCornerRadius="@dimen/_7sdp"
 
                     >
 
                     <ImageView
-
-                        android:layout_marginStart="@dimen/_3sdp"
-                        android:layout_width="@dimen/_13sdp"
-                        android:layout_height="@dimen/_13sdp"
-                        android:src="@drawable/location"/>
-
-
-                    <TextView
-                        android:maxLines="1"
-                        android:layout_marginBottom="@dimen/_3sdp"
-                        android:layout_marginTop="@dimen/_3sdp"
-                        android:layout_marginStart="@dimen/_5sdp"
-                        android:layout_gravity="center"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="@dimen/_7sdp"
-                        android:textColor="@color/black"
-                        android:textStyle="italic"
-                        android:text="এপ্রিল ২০২৪ হতে ভাড়া দেওয়া হবে"/>
+                        android:id="@+id/image1"
+                        android:layout_width="@dimen/_110sdp"
+                        android:layout_height="@dimen/_90sdp"
+                        android:src="@drawable/hostelpic"
+                        android:scaleType="centerCrop"
+                        />
 
 
 
-                </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="@dimen/_3sdp"
-                    >
-
-                    <ImageView
-                        android:layout_marginStart="@dimen/_3sdp"
-                        android:layout_width="@dimen/_13sdp"
-                        android:layout_height="@dimen/_13sdp"
-                        android:src="@drawable/home"/>
-
-
-                    <TextView
-                        android:textColor="@color/black"
-
-                        android:layout_marginStart="@dimen/_5sdp"
-                        android:layout_gravity="center"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="@dimen/_7sdp"
-                        android:textStyle="italic"
-                        android:maxLines="1"
-                        android:text="এপ্রিল ২০২৪ হতে ভাড়া দেওয়া হবে"/>
-
-
-
-                </LinearLayout>
-
+                </androidx.cardview.widget.CardView>
 
 
 
                 <LinearLayout
+
                     android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_4sdp"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="@dimen/_8sdp"
+                    android:orientation="vertical"
+                    android:layout_marginStart="@dimen/_6sdp"
+
                     >
 
                     <TextView
-                        android:textColor="@color/black"
-                        android:background="@drawable/itemlayout"
-
-                        android:layout_marginStart="@dimen/_5sdp"
-                        android:layout_gravity="center"
-                        android:layout_width="@dimen/_60sdp"
-                        android:layout_height="@dimen/_20sdp"
-                        android:textSize="@dimen/_9sdp"
-                        android:gravity="center"
-
-
+                        android:id="@+id/name1"
+                        android:layout_width="wrap_content"
                         android:textStyle="bold"
-                        android:text="20000"/>
-
-
-                    <TextView
                         android:textColor="@color/black"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_10sdp"
+                        android:padding="2dp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:text="এপ্রিল ২০২৪ হতে ভাড়া দেওয়া হবে"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_5sdp"
+
+                        >
+
+                        <ImageView
+
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:layout_width="@dimen/_13sdp"
+                            android:layout_height="@dimen/_13sdp"
+                            android:src="@drawable/location"/>
 
 
-                        android:layout_marginStart="@dimen/_5sdp"
-                        android:layout_gravity="center"
-                        android:layout_width="@dimen/_60sdp"
-                        android:layout_height="@dimen/_20sdp"
-                        android:textSize="@dimen/_9sdp"
-                        android:gravity="center"
+                        <TextView
+                            android:id="@+id/location1"
+                            android:maxLines="1"
+                            android:layout_marginBottom="@dimen/_3sdp"
+                            android:layout_marginTop="@dimen/_1sdp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_8sdp"
+                            android:textColor="@color/black"
+                            android:textStyle="italic"
+                            android:text="ঢাকার, রংপুর, নীলফামারী"/>
 
-                        android:textStyle="italic"
-                        android:text="2/2/2024"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        >
+
+                        <ImageView
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:layout_width="@dimen/_13sdp"
+                            android:layout_height="@dimen/_13sdp"
+                            android:src="@drawable/home"/>
+
+
+                        <TextView
+                            android:id="@+id/flat1"
+                            android:textColor="@color/black"
+
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_8sdp"
+                            android:textStyle="italic"
+                            android:maxLines="1"
+                            android:text="ফ্লাট বাসা"/>
+
+
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        >
+
+                        <TextView
+                            android:id="@+id/price1"
+                            android:textColor="@color/black"
+                            android:background="@drawable/itemlayout"
+
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_gravity="center"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:textSize="@dimen/_9sdp"
+                            android:gravity="center"
+
+
+
+                            android:textStyle="bold"
+                            android:text="20000"/>
+
+
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_gravity="center"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:textSize="@dimen/_9sdp"
+                            android:gravity="center"
+
+                            android:textStyle="italic"
+                            android:text="2/2/2024"/>
+
+                        <ImageView
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginStart="@dimen/_2sdp"
+                            android:layout_width="@dimen/_13sdp"
+                            android:layout_height="@dimen/_13sdp"
+                            android:src="@drawable/love2"/>
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+
 
 
 
                 </LinearLayout>
-
 
 
 
@@ -197,20 +218,13 @@
 
 
 
-
-
-        </LinearLayout>
-
-
-
-
-    </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
 
 
 
 
-</LinearLayout>
+    </LinearLayout>
 
 
 

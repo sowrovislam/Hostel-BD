@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FBF5F5"
+    android:clickable="true"
+    android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ss"
+            >
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginEnd="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                > <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autoStart="false"
+                android:id="@+id/viewFlipper">
+
+                <com.jsibbold.zoomage.ZoomageView
+                    android:scaleType="centerCrop"
+                    android:id="@+id/image1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/img"
+                    app:zoomage_animateOnReset="true"
+                    app:zoomage_autoCenter="true"
+                    app:zoomage_autoResetMode="UNDER"
+                    app:zoomage_maxScale="8"
+                    app:zoomage_minScale="0.6"
+                    app:zoomage_restrictBounds="false"
+                    app:zoomage_translatable="true"
+                    app:zoomage_zoomable="true" />
+
+                <com.jsibbold.zoomage.ZoomageView
+                    android:scaleType="centerCrop"
+                    android:id="@+id/image2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:zoomage_restrictBounds="false"
+                    app:zoomage_animateOnReset="true"
+                    app:zoomage_autoResetMode="UNDER"
+                    android:src="@drawable/img_4"
+                    app:zoomage_autoCenter="true"
+                    app:zoomage_zoomable="true"
+                    app:zoomage_translatable="true"
+                    app:zoomage_minScale="0.6"
+                    app:zoomage_maxScale="8"
+                    />
+                <com.jsibbold.zoomage.ZoomageView
+                    android:scaleType="centerCrop"
+                    android:id="@+id/image3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:zoomage_restrictBounds="false"
+                    app:zoomage_animateOnReset="true"
+                    android:src="@drawable/img_2"
+                    app:zoomage_autoResetMode="UNDER"
+                    app:zoomage_autoCenter="true"
+                    app:zoomage_zoomable="true"
+                    app:zoomage_translatable="true"
+                    app:zoomage_minScale="0.6"
+                    app:zoomage_maxScale="8"
+                    />
+
+
+                <com.jsibbold.zoomage.ZoomageView
+                    android:scaleType="centerCrop"
+                    android:id="@+id/image4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/img_4"
+                    app:zoomage_restrictBounds="false"
+                    app:zoomage_animateOnReset="true"
+                    app:zoomage_autoResetMode="UNDER"
+                    app:zoomage_autoCenter="true"
+                    app:zoomage_zoomable="true"
+                    app:zoomage_translatable="true"
+                    app:zoomage_minScale="0.6"
+                    app:zoomage_maxScale="8" />
+
+                <com.jsibbold.zoomage.ZoomageView
+                    android:scaleType="centerCrop"
+                    android:id="@+id/image5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/img_2"
+                    app:zoomage_restrictBounds="false"
+                    app:zoomage_animateOnReset="true"
+                    app:zoomage_autoResetMode="UNDER"
+                    app:zoomage_autoCenter="true"
+                    app:zoomage_zoomable="true"
+                    app:zoomage_translatable="true"
+                    app:zoomage_minScale="0.6"
+                    app:zoomage_maxScale="8"
+                    />
+
+
+
+
+
+            </ViewFlipper>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_56sdp">
+
+
+                    <ImageButton
+                        android:id="@+id/next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:src="@drawable/fastnext" />
+
+
+
+                    <ImageButton
+                        android:id="@+id/previous"
+                        android:background="@color/white"
+                        android:layout_marginEnd="3dp"
+                        android:layout_gravity="end"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/previous"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/ss"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="serif"
+
+                android:text="এপ্রিল,২০২৪ হতে ভারা দেওয়া হবে"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginStart="@dimen/_14sdp"
+                  >
+
+                  <ImageView
+                      android:layout_width="@dimen/_16sdp"
+                      android:layout_height="@dimen/_16sdp"
+                      android:src="@drawable/location"
+                      />
+
+
+                  <TextView
+
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginStart="@dimen/_6sdp"
+                      android:text="মণিপুর,মিরপুর, ঢাকা"
+                      android:textColor="@color/black"
+                   />
+
+
+              </LinearLayout>
+
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginStart="@dimen/_14sdp"
+                  android:layout_marginTop="@dimen/_2sdp"
+                  android:layout_marginBottom="@dimen/_2sdp"
+                  >
+
+                  <ImageView
+                      android:layout_width="@dimen/_16sdp"
+                      android:layout_height="@dimen/_16sdp"
+                      android:src="@drawable/home"
+                      />
+
+
+                  <TextView
+
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginStart="@dimen/_6sdp"
+                      android:text="নামঃ ০০,হোল্ডিং নংঃ০০"
+                      android:textColor="@color/black"
+                      android:textStyle="bold"
+
+                   />
+
+
+              </LinearLayout>
+
+
+            <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginStart="@dimen/_14sdp"
+                  >
+
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:src="@drawable/flat" />
+
+
+                <TextView
+
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginStart="@dimen/_6sdp"
+                      android:text="ফ্ল্যাট"
+                      android:textColor="@color/black"
+                      android:textStyle="bold"
+
+                   />
+
+
+              </LinearLayout>
+
+
+            <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginStart="@dimen/_11sdp"
+                  android:layout_marginTop="@dimen/_7sdp">
+
+
+                  <TextView
+                      android:layout_width="@dimen/_80sdp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginStart="@dimen/_6sdp"
+                      android:text="20000"
+                      android:gravity="center"
+                      android:textColor="@color/black"
+                      android:background="@drawable/itemlayout"
+                      android:textStyle="bold" />
+
+            <TextView
+
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginStart="@dimen/_40sdp"
+                      android:text="Jan 24,2024"
+                        android:layout_gravity="center"
+                      android:textColor="#00BCD4"
+                      android:textStyle="bold"
+
+                   />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:src="@drawable/flat"
+                android:layout_marginStart="@dimen/_40sdp"
+
+                />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:src="@drawable/love2"
+                android:layout_marginStart="@dimen/_17sdp"
+                />
+
+              </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="সুযোগ-সুবিধা সমূহঃ"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_13sdp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_110sdp"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:background="@drawable/bacroundlistitem"
+                android:orientation="vertical"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    >
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bacroundtext"
+
+                            android:text="সুযোগ-সুবিধা "
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bacroundtext"
+                            android:text="সুযোগ-সুবিধা "
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bacroundtext"
+                            android:text="সুযোগ-সুবিধা "
+                            android:textStyle="bold" />
+
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bacroundtext"
+
+                            android:text="সুযোগ-সুবিধা "
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bacroundtext"
+                            android:text="সুযোগ-সুবিধা "
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bacroundtext"
+                            android:text="সুযোগ-সুবিধা "
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bacroundtext"
+
+                            android:text="সুযোগ-সুবিধা "
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bacroundtext"
+                            android:text="সুযোগ-সুবিধা "
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bacroundtext"
+                            android:text="সুযোগ-সুবিধা "
+                            android:textStyle="bold" />
+
+
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_13sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:text="অন্যান্য সুযোগ ও সুবিধাসমূহঃ"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:background="@drawable/bacroundlistitem"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    >
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bacroundtext"
+
+                            android:text="সুযোগ-সুবিধা "
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bacroundtext"
+                            android:text="সুযোগ-সুবিধা "
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bacroundtext"
+                            android:text="সুযোগ-সুবিধা "
+                            android:textStyle="bold" />
+
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bacroundtext"
+
+                            android:text="সুযোগ-সুবিধা "
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bacroundtext"
+                            android:text="সুযোগ-সুবিধা "
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bacroundtext"
+                            android:text="সুযোগ-সুবিধা "
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:background="#FF9800"
+                android:orientation="horizontal">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:src="@drawable/hostelbd"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="2dp"
+                    tools:ignore="MissingConstraints" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+
+                        android:gravity="center"
+                        android:text="HostelBD Admin "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="ভেরিফাইড একাউন্ট"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="কল করুন"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+

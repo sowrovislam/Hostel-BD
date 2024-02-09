@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:clickable="true"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:layout_marginEnd="@dimen/_7sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            >
+
+            <ViewFlipper
+                android:id="@+id/viewFlipper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoStart="false"
+                >
+
+
+                <com.jsibbold.zoomage.ZoomageView
+                    android:id="@+id/image1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/img_1"
+                    app:zoomage_restrictBounds="false"
+                    app:zoomage_animateOnReset="true"
+                    app:zoomage_autoResetMode="UNDER"
+                    app:zoomage_autoCenter="true"
+                    app:zoomage_zoomable="true"
+                    app:zoomage_translatable="true"
+                    app:zoomage_minScale="0.6"
+                    app:zoomage_maxScale="8"
+                    />
+
+                <com.jsibbold.zoomage.ZoomageView
+                    android:id="@+id/image2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/img"
+                    app:zoomage_restrictBounds="false"
+                    app:zoomage_animateOnReset="true"
+                    app:zoomage_autoResetMode="UNDER"
+                    app:zoomage_autoCenter="true"
+                    app:zoomage_zoomable="true"
+                    app:zoomage_translatable="true"
+                    app:zoomage_minScale="0.6"
+                    app:zoomage_maxScale="8"
+                    />
+
+                <com.jsibbold.zoomage.ZoomageView
+                    android:id="@+id/image3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/img_4"
+                    app:zoomage_restrictBounds="false"
+                    app:zoomage_animateOnReset="true"
+                    app:zoomage_autoResetMode="UNDER"
+                    app:zoomage_autoCenter="true"
+                    app:zoomage_zoomable="true"
+                    app:zoomage_translatable="true"
+                    app:zoomage_minScale="0.6"
+                    app:zoomage_maxScale="8"
+                    />
+
+                <com.jsibbold.zoomage.ZoomageView
+                    android:id="@+id/image4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/img"
+                    app:zoomage_restrictBounds="false"
+                    app:zoomage_animateOnReset="true"
+                    app:zoomage_autoResetMode="UNDER"
+                    app:zoomage_autoCenter="true"
+                    app:zoomage_zoomable="true"
+                    app:zoomage_translatable="true"
+                    app:zoomage_minScale="0.6"
+                    app:zoomage_maxScale="8"
+                    />
+
+
+
+
+            </ViewFlipper>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40sdp">
+
+
+                <ImageButton
+                    android:id="@+id/nextpage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/fastnext"/>
+
+
+
+                <ImageButton
+                    android:id="@+id/previous"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/previous"/>
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
